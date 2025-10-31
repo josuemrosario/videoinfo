@@ -33,13 +33,18 @@ npm init
 | -------------------------- | -------------------------------------- |
 | app.on( evento , callback) | Escuta eventos do ciclo de vida do app |
 
-10. Clarification on Toggling Developer Tools
+### 10. Clarification on Toggling Developer Tools
+
+### 11. Loading HTML Docs
 
 - cria uma browser window
 - Faz ela carregar um arquivo html
+- browserWindow : Classe para criar janelas nativas
 
-11. Loading HTML Docs
-12. Selecting Videos
+### 12. Selecting Videos
+
+- continua e cria formulario para carregar um arquivo html
+
 13. Sample Video - Download Me!
 14. Reading File Details
 15. Introduction to FFMPEG
