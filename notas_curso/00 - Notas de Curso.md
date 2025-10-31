@@ -29,10 +29,15 @@ npm init
 - altera o scripts do package.json
 - roda e fecha a aplicação
 
-|codigo |descricao|
-|app.on( evento , callback)| Escuta eventos do ciclo de vida do app|
+| codigo                     | descricao                              |
+| -------------------------- | -------------------------------------- |
+| app.on( evento , callback) | Escuta eventos do ciclo de vida do app |
 
 10. Clarification on Toggling Developer Tools
+
+- cria uma browser window
+- Faz ela carregar um arquivo html
+
 11. Loading HTML Docs
 12. Selecting Videos
 13. Sample Video - Download Me!
