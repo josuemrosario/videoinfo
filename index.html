@@ -2,7 +2,23 @@
 <body>
   <h1>Video info</h1>
   <div>
-    <label for="video">Selecione um video</label>
-    <input type="file" accept="video/*" />
+    <form action="#">
+      <label for="video">Selecione um video</label>
+      <input type="file" accept="video/*" />
+      <button type="submit">Get Info</button>
+    </form>
   </div>
+
+  <script>
+    const electron = require("electron");
+    const { ipcRenderer, webUtils } = electron;
+
+    document.querySelector("form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const file = document.querySelector("input").files[0];
+      const path = webUtils.getPathForFile(file);
+
+      debugger;
+    });
+  </script>
 </body>
