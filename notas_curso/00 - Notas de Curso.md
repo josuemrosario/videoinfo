@@ -183,8 +183,31 @@ Instalado com êxito
 
 ### 19. Require Statements in the Browser
 
-20. Required Destructuring Update
-21. IPC Communication
+- Define onde vai ficar a lógica de analise do tempo do video (no electron app - index.js)
+- Usando electron o html tem acesso a require assim como no javascript
+- alem disso tem acesso tambem a outros módulo node tais como o fs
+
+### 20. Required Destructuring Update
+
+```html
+<script>
+  const electron = require('electron')
+  const{ipcRenderer, webUtils} = electron
+```
+
+acesso ao arquivo fica
+
+```js
+const file = document.querySelector("input").files[0];
+const file = webUtils.getPathForFile(file);
+```
+
+### 21. IPC Communication
+
+- Explica a logica de envio do WebApp ao ElectronApp
+- o WebAPP(index.html) roda `ipcRenderer.send('mensagem',dado)`
+- o ElectronApp(index.js) roda `ipcMain.on('mensagem',()=>{})`
+
 22. Video Duration with FFProbe
 23. Receiving IPC Events
 24. Wrapup

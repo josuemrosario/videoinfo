@@ -18,7 +18,7 @@
       const file = document.querySelector("input").files[0];
       const path = webUtils.getPathForFile(file);
 
-      debugger;
+      ipcRenderer.send("video:submit", path); //envia dados ao Electron APP
     });
   </script>
 </body>
