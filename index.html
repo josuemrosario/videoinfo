@@ -7,6 +7,7 @@
       <input type="file" accept="video/*" />
       <button type="submit">Get Info</button>
     </form>
+    <h1 id="result"></h1>
   </div>
 
   <script>
@@ -19,6 +20,12 @@
       const path = webUtils.getPathForFile(file);
 
       ipcRenderer.send("video:submit", path); //envia dados ao Electron APP
+    });
+
+    ipcRenderer.on("video:metadata", (event, duration) => {
+      document.querySelector(
+        "#result"
+      ).innerHTML = `duracao: ${duration} segundos`;
     });
   </script>
 </body>

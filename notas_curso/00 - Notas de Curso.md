@@ -214,8 +214,14 @@ const file = webUtils.getPathForFile(file);
 - joga a informação na console
 - foi necessario instalar o fluent-ffmpeg `npm install fluent-ffmpeg`
 
-23. Receiving IPC Events
-24. Wrapup
+### 23. Receiving IPC Events
+
+### 24. Wrapup
+
+- Troca a linha que somente mostra a duração na console por envio da duração para o index.html
+- configura o lado do index.html a receber a duração do video
+- main.Window.WebContent (index.js) envia para ipcRenderer.on (index.html)
+
 25. Updating Your Project for Best Security Practices
 26. App Overview
 27. App Boilerplate
