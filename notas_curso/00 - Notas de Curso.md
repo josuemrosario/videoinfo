@@ -208,7 +208,12 @@ const file = webUtils.getPathForFile(file);
 - o WebAPP(index.html) roda `ipcRenderer.send('mensagem',dado)`
 - o ElectronApp(index.js) roda `ipcMain.on('mensagem',()=>{})`
 
-22. Video Duration with FFProbe
+### 22. Video Duration with FFProbe
+
+- modifica o ipcMain.on do index.js usando FFProbe para pegar a duração do video
+- joga a informação na console
+- foi necessario instalar o fluent-ffmpeg `npm install fluent-ffmpeg`
+
 23. Receiving IPC Events
 24. Wrapup
 25. Updating Your Project for Best Security Practices
